@@ -1,5 +1,11 @@
 # FiltrageHybride\_NLP-regex
 
+
+
+REMPLACER LES \[INFOS] par \[...] pour tous les cas
+
+
+
 Prototype de filtrage pour l'outil AMI d'activis. Basé sur NLP et regex
 
 
@@ -10,7 +16,7 @@ fr\_core\_news\_md = choix du modèle. Medium est bon pour les prototypes. Dans 
 
 
 
-Liste de questions souvent posé à AMI : 
+Liste de questions souvent posé à AMI :
 
 * Comment faire une demande de permis de construction ou de rénovation ? 🏗️
 * Quelles sont les dates des prochaines collectes de déchets, recyclage ou compost ? ♻️

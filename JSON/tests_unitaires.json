@@ -1,0 +1,29 @@
+{
+    "liste_test" :[
+    {"input": "Mon numéro est 514-123-4567", "expected": "[TÉLÉPHONE]", "difficulté": "facile"},
+    {"input": "Voici mon NAS : 123456789", "expected": "[NAS]", "difficulté": "facile"},
+    {"input": "Mon email est test@example.com", "expected": "[EMAIL]", "difficulté": "facile"},
+    {"input": "J’habite au 234 boulevard Saint-Michel", "expected": "[ADRESSE]", "difficulté": "facile"},
+    {"input": "Je suis handicapé", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "facile"},
+    {"input": "Je suis hadnicapé", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "Mon nom est Marie Dupont", "expected": "[PERSONNE]", "difficulté": "facile"},
+    {"input": "Mon voisin me harcèle", "expected": "[INFOS_SENSIBLES]", "difficulté": "moyen"},
+    {"input": "Je vis dans un logement subventionné", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "Je suis dans une situation de pauvreté", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "Ma facture est impayée", "expected": "[INFOS_SENSIBLES]", "difficulté": "facile"},
+    {"input": "Mon numéro de dossier est 221034A", "expected": "[NUMERO_DOSSIER]", "difficulté": "facile"},
+    {"input": "Je souffre de dépression chronique", "expected": "[INFOS_SENSIBLES]", "difficulté": "moyen"},
+    {"input": "Je suis en aide sociale", "expected": "[INFOS_SENSIBLES]", "difficulté": "moyen"},
+    {"input": "J'ai reçu un diagnostic de diabète", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "J'ai des troubles de santée mentale", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "difficile"},
+    {"input": "Le tribunal m’a convoqué pour une poursuite", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "Mon logement est au 101 avenue des lilas", "expected": "[ADRESSE]", "difficulté": "facile"},
+    {"input": "J'ai été victime de violence conjugale", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "Voici mon courriel : jean.duchesne@ville.ca", "expected": "[EMAIL]", "difficulté": "facile"},
+    {"input": "Ma santé se dégrade de jour en jour", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "difficile"},
+    {"input": "Je suis en situation de dépendance", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "Je crois que mon voisin cache des drogues", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"},
+    {"input": "J’ai une plainte concernant la collecte des ordures", "expected": "[INFOS_SENSIBLES]", "difficulté": "facile"},
+    {"input": "Mon casier judiciaire est vierge", "expected": "[INFOS_SENSIBLES_OR_ALERTE]", "difficulté": "moyen"}
+    ]
+}
