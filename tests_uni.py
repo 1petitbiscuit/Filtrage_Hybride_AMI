@@ -10,28 +10,43 @@ def tester_filtre():
 
     for i, test in enumerate(tests, 1):
         result = fi.filtre(test["input"])
-        passed = False
+        expected_items = test["expected"]
+        passed = True
 
-        if test["expected"] in result:
-            passed = True
-        elif test["expected"] == "[INFOS_SENSIBLES_OR_ALERTE]":
-            if "[INFOS_SENSIBLES]" in result or "ALERTE" in result:
-                passed = True
-        
-        a = i/total*10
-        b = a%1
-        res = int(a-b)
-        #affichage
-        bar = "🟩" * res + "⬜" * (10 - res)
-        status = "✅ SUCCÈS" if passed else "❌ ÉCHEC"
-        print(f"[{bar}] ({i}/{total}) {status} : {test['input']} // ({test['difficulté']})")
-        if not passed:
-            print(f"    ↪ Résultat obtenu : {result}\n")
+        print(f"\n ---> Test {i} : {test['input']}")
+        print(f"    🔍 Attendus : {expected_items}")
+        print(f"    🧾 Résultat : {result}")
+
+        if expected_items == []:
+            markers = [
+                "[INFOS_SENSIBLES]", "[TÉLÉPHONE]", "[EMAIL]", "[NAS]", "[ADRESSE]",
+                "[NUMERO_DOSSIER]", "[DATE]", "[HEURE]", "[ARGENT]", "[PERSONNE]",
+                "[LIEU]", "ALERTE"
+            ]
+            for m in markers:
+                if m in result:
+                    passed = False
+                    print(f"    ❌ Échec : présence inattendue de {m}")
+                    break
+        else:
+            for item in expected_items:
+                if item == "[INFOS_SENSIBLES_OR_ALERTE]":
+                    if "[INFOS_SENSIBLES]" not in result and "ALERTE" not in result:
+                        passed = False
+                        print("    ❌ Échec : ni [INFOS_SENSIBLES] ni ALERTE détecté")
+                        break
+                elif item not in result:
+                    passed = False
+                    print(f"    ❌ Échec : {item} non trouvé dans le résultat")
+                    break
+
         if passed:
             correct += 1
-
-        time.sleep(0.1)
+            print("    ✅ Test réussi")
+        else:
+            print("    ❌ Test échoué")
+        
 
     precision = (correct / total) * 100
-    print("\n=== ✅ Tests terminés ===")
+    print("\n=== ✅ Résultats des tests ===")
     print(f"🎯 Précision : {precision:.2f}% ({correct}/{total} réussis)\n")

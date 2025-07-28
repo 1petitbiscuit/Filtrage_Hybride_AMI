@@ -67,8 +67,9 @@ def filtre(text):
         max_score = cosine_scores.max().item()
 
         if max_score >= SEUIL_SIMILARITE:
-            text += "\n[⚠️ ALERTE : contenu potentiellement sensible détecté par analyse sémantique]"
-            print(f"💡 Score de similarité détecté : {max_score:.2f}")  #  optionnel
+            text += f"\n[⚠️ ALERTE : contenu potentiellement sensible détecté par analyse sémantique]"
+        
+        text += f"\n[💡 Score de similarité sémantique détecté : {max_score:.2f}]"
 
     
     return text
