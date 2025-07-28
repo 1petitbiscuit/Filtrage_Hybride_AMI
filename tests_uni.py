@@ -21,7 +21,7 @@ def tester_filtre():
             markers = [
                 "[INFOS_SENSIBLES]", "[TÉLÉPHONE]", "[EMAIL]", "[NAS]", "[ADRESSE]",
                 "[NUMERO_DOSSIER]", "[DATE]", "[HEURE]", "[ARGENT]", "[PERSONNE]",
-                "[LIEU]", "ALERTE"
+                "ALERTE"
             ]
             for m in markers:
                 if m in result:
@@ -34,6 +34,16 @@ def tester_filtre():
                     if "[INFOS_SENSIBLES]" not in result and "ALERTE" not in result:
                         passed = False
                         print("    ❌ Échec : ni [INFOS_SENSIBLES] ni ALERTE détecté")
+                        break
+                elif item == "[ADRESSE_OR_ALERTE]":
+                    if "[ADRESSE]" not in result and "ALERTE" not in result:
+                        passed = False
+                        print("    ❌ Échec : ni [ADRESSE] ni ALERTE détecté")
+                        break
+                elif item == "[NUMERO_DOSSIER_OR_ALERTE]":
+                    if "[NUMERO_DOSSIER]" not in result and "ALERTE" not in result:
+                        passed = False
+                        print("    ❌ Échec : ni [NUMERO_DOSSIER] ni ALERTE détecté")
                         break
                 elif item not in result:
                     passed = False

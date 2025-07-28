@@ -1,0 +1,84 @@
+{"text": "Mon adresse est 2323 boulevard Saint-Joseph.", "entities": [[16, 43, "ADRESSE"]]}
+{"text": "Mon adresse est 58 rue des Orchidées.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 39 place du Marché.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 3500 avenue Papineau.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 175 rue de Paris.", "entities": [[16, 32, "ADRESSE"]]}
+{"text": "Mon adresse est 74 rue Notre-Dame Est.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 56 avenue des Pins.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 807 route des Vallées.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 60 avenue Saint-Jean.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 804 rue Principale.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 3 rue des Jonquilles.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 66 chemin du Nord.", "entities": [[16, 33, "ADRESSE"]]}
+{"text": "Mon adresse est 155 chemin des Lacs.", "entities": [[16, 35, "ADRESSE"]]}
+{"text": "Mon adresse est 3200 boulevard Saint-Michel.", "entities": [[16, 43, "ADRESSE"]]}
+{"text": "Mon adresse est 42 impasse du Château.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 16 boulevard du Curé-Labelle.", "entities": [[16, 44, "ADRESSE"]]}
+{"text": "Mon adresse est 12 allée des Lilas.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 777 rue de l’Hôpital.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 27 avenue de la Liberté.", "entities": [[16, 39, "ADRESSE"]]}
+{"text": "Mon adresse est 27 chemin du Moulin.", "entities": [[16, 35, "ADRESSE"]]}
+{"text": "Mon adresse est 33 avenue de la Forêt.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 91 rue du Village.", "entities": [[16, 33, "ADRESSE"]]}
+{"text": "Mon adresse est 34 rue du Faubourg Saint-Antoine.", "entities": [[16, 48, "ADRESSE"]]}
+{"text": "Mon adresse est 555 chemin de la Baie.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 51 voie des Collines.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 89 chemin du Fleuve.", "entities": [[16, 35, "ADRESSE"]]}
+{"text": "Mon adresse est 126 chemin de la Rivière Bleue.", "entities": [[16, 46, "ADRESSE"]]}
+{"text": "Mon adresse est 28 chemin des Écoliers.", "entities": [[16, 38, "ADRESSE"]]}
+{"text": "Mon adresse est 310 avenue Laval.", "entities": [[16, 32, "ADRESSE"]]}
+{"text": "Mon adresse est 1001 avenue du Parc.", "entities": [[16, 35, "ADRESSE"]]}
+{"text": "Mon adresse est 28 rue Jean-Talon.", "entities": [[16, 33, "ADRESSE"]]}
+{"text": "Mon adresse est 444 rue Saint-Denis.", "entities": [[16, 35, "ADRESSE"]]}
+{"text": "Mon adresse est 666 rue de la Colline.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 305 chemin Saint-Paul.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 11 rue du Parc.", "entities": [[16, 30, "ADRESSE"]]}
+{"text": "Mon adresse est 202 rue des Lilas Est.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 940 rue du Cégep.", "entities": [[16, 32, "ADRESSE"]]}
+{"text": "Mon adresse est 430 rue Notre-Dame Ouest.", "entities": [[16, 40, "ADRESSE"]]}
+{"text": "Mon adresse est 700 boulevard des Sports.", "entities": [[16, 40, "ADRESSE"]]}
+{"text": "Mon adresse est 128 rue du Port, 33000 Bordeaux.", "entities": [[16, 47, "ADRESSE"]]}
+{"text": "Mon adresse est 919 rue des Prés.", "entities": [[16, 32, "ADRESSE"]]}
+{"text": "Mon adresse est 63 chemin de la Pointe.", "entities": [[16, 38, "ADRESSE"]]}
+{"text": "Mon adresse est 59 boulevard de l’Université.", "entities": [[16, 44, "ADRESSE"]]}
+{"text": "Mon adresse est 90 rue Lavigne.", "entities": [[16, 30, "ADRESSE"]]}
+{"text": "Mon adresse est 98 route de la Plage.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 501 rue du Parc Industriel.", "entities": [[16, 42, "ADRESSE"]]}
+{"text": "Mon adresse est 6 boulevard du Montparnasse.", "entities": [[16, 43, "ADRESSE"]]}
+{"text": "Mon adresse est 390 rue des Peupliers.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 6 impasse de la Forêt.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 2111 avenue de la Cathédrale.", "entities": [[16, 44, "ADRESSE"]]}
+{"text": "Mon adresse est 101 avenue du Port.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 7 avenue du Général de Gaulle.", "entities": [[16, 45, "ADRESSE"]]}
+{"text": "Mon adresse est 70 rue de l’Église.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 32 impasse des Lilas.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 5 avenue de l’Hôtel-de-Ville.", "entities": [[16, 44, "ADRESSE"]]}
+{"text": "Mon adresse est 1025 rue Ontario Est.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 199 avenue Saint-Louis.", "entities": [[16, 38, "ADRESSE"]]}
+{"text": "Mon adresse est 23 rue de la Paix.", "entities": [[16, 33, "ADRESSE"]]}
+{"text": "Mon adresse est 194 rue Laval.", "entities": [[16, 29, "ADRESSE"]]}
+{"text": "Mon adresse est 44 impasse de la Source.", "entities": [[16, 39, "ADRESSE"]]}
+{"text": "Mon adresse est 77 rue du Marché Central.", "entities": [[16, 40, "ADRESSE"]]}
+{"text": "Mon adresse est 42 place Ville-Marie.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 78 avenue Sainte-Marie.", "entities": [[16, 38, "ADRESSE"]]}
+{"text": "Mon adresse est 9 rue Royale.", "entities": [[16, 28, "ADRESSE"]]}
+{"text": "Mon adresse est 83 rue Principale Est.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 3 place des Festivals.", "entities": [[16, 37, "ADRESSE"]]}
+{"text": "Mon adresse est 2345 chemin des Cèdres.", "entities": [[16, 38, "ADRESSE"]]}
+{"text": "Mon adresse est 112 route des Neiges.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 111 boulevard Beaubien.", "entities": [[16, 38, "ADRESSE"]]}
+{"text": "Mon adresse est 12345 Québec.", "entities": [[16, 28, "ADRESSE"]]}
+{"text": "Mon adresse est 76000 Rouen.", "entities": [[16, 27, "ADRESSE"]]}
+{"text": "Mon adresse est 204 rue du Maréchal Juin.", "entities": [[16, 40, "ADRESSE"]]}
+{"text": "Mon adresse est 27 boulevard Laurier.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 812 chemin du Lac.", "entities": [[16, 33, "ADRESSE"]]}
+{"text": "Mon adresse est 710 route de l’Aéroport.", "entities": [[16, 39, "ADRESSE"]]}
+{"text": "Mon adresse est 18 rue du Centre.", "entities": [[16, 32, "ADRESSE"]]}
+{"text": "Mon adresse est 19 allée des Chênes.", "entities": [[16, 35, "ADRESSE"]]}
+{"text": "Mon adresse est 17 chemin des Peupliers.", "entities": [[16, 39, "ADRESSE"]]}
+{"text": "Mon adresse est 212 rue des Camélias.", "entities": [[16, 36, "ADRESSE"]]}
+{"text": "Mon adresse est 803 chemin du Moulin Neuf.", "entities": [[16, 41, "ADRESSE"]]}
+{"text": "Mon adresse est 201 rue des Écoles.", "entities": [[16, 34, "ADRESSE"]]}
+{"text": "Mon adresse est 16 avenue Félix-Leclerc.", "entities": [[16, 39, "ADRESSE"]]}
+{"text": "Mon adresse est 1420 chemin de la Montagne.", "entities": [[16, 42, "ADRESSE"]]}
+{"text": "Mon adresse est 3700 rue Sherbrooke Est.", "entities": [[16, 39, "ADRESSE"]]}
