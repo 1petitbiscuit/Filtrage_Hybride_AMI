@@ -1,15 +1,15 @@
-import time
-import filtre as fi
-
+import sys
+sys.path.append("..")
+import main
 
 def tester_filtre():
     print("\n=== 📊 Lancement de la batterie de tests de filtrage ===\n")   
-    tests = fi.TESTS
+    tests = main.TESTS
     total = len(tests)
     correct = 0
 
     for i, test in enumerate(tests, 1):
-        result = fi.filtre(test["input"])
+        result = main.filtre(test["input"])
         expected_items = test["expected"]
         passed = True
 
