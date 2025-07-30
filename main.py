@@ -21,26 +21,27 @@ TESTS =  tests_unitaires["liste_test"]
 regex_filtre = FiltreRegex(TRIGGERS, DOSSIER_PATTERNS)
 sem_filtre = FiltreSem(SEMANTIC_SENSITIVE_PHRASES)
 nlp_filtre = FiltreNLP()
-nlp_adresse_filtre = FiltreNLP_Adresse()
+#nlp_adresse_filtre = FiltreNLP_Adresse()
 
 #~~ fonction ~~#
 def filtre(text):
     temp_text = text
     #~~~~ regex ~~~~#
     regex_filtre.filtre(temp_text)
-    temp_text, _ = regex_filtre.get_result()
+    temp_text = regex_filtre.get_result()
 
     #~~~~ NLP ~~~~#
     nlp_filtre.filtre(temp_text)
-    temp_text, labels = nlp_filtre.get_result()
+    temp_text = nlp_filtre.get_result()
 
     #~~~~ NLP adresse ~~~~#         non fonctionel
     #nlp_adresse_filtre.filtre(temp_text)
-    #temp_text, labels = nlp_adresse_filtre.get_result()
+    #temp_text = nlp_adresse_filtre.get_result()
+
 
     # ~~~~ Sémantique (embeddings)  ~~~~#
     sem_filtre.filtre(temp_text)
-    temp_text, _ = sem_filtre.get_result()
+    temp_text = sem_filtre.get_result()
 
     return temp_text
 

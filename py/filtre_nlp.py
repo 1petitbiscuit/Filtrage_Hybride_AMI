@@ -25,7 +25,5 @@ class FiltreNLP(FiltreBase):
             if ent.label_ in LABEL_MAPPING:
                 texte_filtre = texte_filtre.replace(ent.text, f"[{LABEL_MAPPING[ent.label_]}]")
         
-        if texte_filtre != text:
-            self.sensibles_detectes.append("NLP")
         
         self.set_content(texte_filtre)

@@ -17,7 +17,7 @@ class FiltreSem(FiltreBase):
         texte_filtre = text
         SEUIL_SIMILARITE = self.val_seuil_H if len(texte_filtre) < self.seuil_len_txt else self.val_seuil_L
 
-        if not self.regex_matched:
+        if not self.regex_matched and len(texte_filtre):
             input_embed = self.embed_model.encode(texte_filtre, convert_to_tensor=True)
             cosine_scores = util.cos_sim(input_embed, self.sensitive_embeds)
             max_score = cosine_scores.max().item()
@@ -27,7 +27,5 @@ class FiltreSem(FiltreBase):
             
             texte_filtre += f"\n    [💡 Score de similarité sémantique détecté : {max_score:.2f}]"
 
-            if texte_filtre != text:
-                self.sensibles_detectes.append("Semantique")
             
             self.set_content(texte_filtre)

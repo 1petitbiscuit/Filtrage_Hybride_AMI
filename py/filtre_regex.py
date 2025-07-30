@@ -13,10 +13,13 @@ class FiltreRegex(FiltreBase):
     def filtre(self, text):
         texte_filtre  = text
 
-        texte_filtre = re.sub(r"\d{3}-\d{3}-\d{4}", "[TÉLÉPHONE]", texte_filtre)
-        texte_filtre = re.sub(r"\d{9}", "[NAS]", texte_filtre)
+        
+        texte_filtre = re.sub(r"\b(?:\+1\s*)?(?:\(?\d{3}\)?[\s.-]*)\d{3}[\s.-]*\d{4}\b","[TÉLÉPHONE]",texte_filtre)
+        texte_filtre = re.sub(r"\b\d{3}[- ]?\d{3}[- ]?\d{3}\b", "[NAS]", texte_filtre)
         texte_filtre = re.sub(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", "[EMAIL]", texte_filtre)
-        texte_filtre = re.sub(r"\d{1,4}\s+(?:rue|avenue|av|boulevard|bd|chemin|ch|impasse|route|allée|place|quai)\s+[\w\s\'\-]+'", "[ADRESSE]", texte_filtre, flags=re.IGNORECASE)
+        texte_filtre = re.sub(r"\b(?:\d{1,4}\s+)?(?:rue|avenue|av|boulevard|bd|chemin|ch|impasse|route|allée|place|quai)\s+[A-ZÉÈÊÂÀÙÎÔÇ][\w\s\'\-]*","[ADRESSE]",texte_filtre,flags=re.IGNORECASE)
+        texte_filtre = re.sub(r"\d{3}.\d{3}.\d{2}.\d{2}", "[IP]", texte_filtre)
+        texte_filtre = re.sub(r"\b(?:[0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2}\b", "[MAC]", texte_filtre)
 
         self.regex_matched = False
         for mot in self.triggers:
@@ -35,9 +38,6 @@ class FiltreRegex(FiltreBase):
                 text = text.replace(w, "[NUMERO_DOSSIER]")
             if self.is_date(w):
                 text = text.replace(w, "[DATE]")
-        
-        if texte_filtre != text:
-            self.sensibles_detectes.append("REGEX")
         
         self.set_content(texte_filtre)
 

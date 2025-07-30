@@ -1,5 +1,7 @@
 import sys
 sys.path.append("..")
+from collections import Counter
+
 import main
 
 def tester_filtre():
@@ -17,7 +19,7 @@ def tester_filtre():
         print(f"    🔍 Attendus : {expected_items}")
         print(f"    🧾 Résultat : {result}")
 
-        if expected_items == []:
+        if expected_items == []:        #check quand aucun filtrage attendu
             markers = [
                 "[INFOS_SENSIBLES]", "[TÉLÉPHONE]", "[EMAIL]", "[NAS]", "[ADRESSE]",
                 "[NUMERO_DOSSIER]", "[DATE]", "[HEURE]", "[ARGENT]", "[PERSONNE]",
@@ -29,25 +31,37 @@ def tester_filtre():
                     print(f"    ❌ Échec : présence inattendue de {m}")
                     break
         else:
+            expected_counter = Counter(expected_items)
+            result_counter = Counter()
             for item in expected_items:
                 if item == "[INFOS_SENSIBLES_OR_ALERTE]":
-                    if "[INFOS_SENSIBLES]" not in result and "ALERTE" not in result:
-                        passed = False
-                        print("    ❌ Échec : ni [INFOS_SENSIBLES] ni ALERTE détecté")
-                        break
+                    if "[INFOS_SENSIBLES]" in result:
+                        result_counter[item] = result.count("[INFOS_SENSIBLES]")
+                    elif "ALERTE" in result:
+                        result_counter[item] = 1
+                    else:
+                        result_counter[item] = 0
                 elif item == "[ADRESSE_OR_ALERTE]":
-                    if "[ADRESSE]" not in result and "ALERTE" not in result:
-                        passed = False
-                        print("    ❌ Échec : ni [ADRESSE] ni ALERTE détecté")
-                        break
+                    if "[ADRESSE]" in result:
+                        result_counter[item] = result.count("[ADRESSE]")
+                    elif "ALERTE" in result:
+                        result_counter[item] = 1
+                    else:
+                        result_counter[item] = 0
                 elif item == "[NUMERO_DOSSIER_OR_ALERTE]":
-                    if "[NUMERO_DOSSIER]" not in result and "ALERTE" not in result:
-                        passed = False
-                        print("    ❌ Échec : ni [NUMERO_DOSSIER] ni ALERTE détecté")
-                        break
-                elif item not in result:
+                    if "[NUMERO_DOSSIER]" in result:
+                        result_counter[item] = result.count("[NUMERO_DOSSIER]")
+                    elif "ALERTE" in result:
+                        result_counter[item] = 1
+                    else:
+                        result_counter[item] = 0
+                else:
+                    result_counter[item] = result.count(item)
+
+                if result_counter[item] < expected_counter[item]:
                     passed = False
-                    print(f"    ❌ Échec : {item} non trouvé dans le résultat")
+                    manquant = expected_counter[item] - result_counter[item]
+                    print(f"    ❌ Échec : {item} attendu {expected_counter[item]} fois, trouvé {result_counter[item]} fois ({manquant} manquant)")
                     break
 
         if passed:
@@ -60,3 +74,7 @@ def tester_filtre():
     precision = (correct / total) * 100
     print("\n=== ✅ Résultats des tests ===")
     print(f"🎯 Précision : {precision:.2f}% ({correct}/{total} réussis)\n")
+
+
+def count_occurrences(text, target):
+    return text.count(target)

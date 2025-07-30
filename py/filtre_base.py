@@ -1,6 +1,5 @@
 class FiltreBase:
     def __init__(self):
-        self.sensibles_detectes = [] 
         self.texte_filtre = ""
         self.regex_matched = False
     
@@ -11,4 +10,4 @@ class FiltreBase:
         self.texte_filtre = text
 
     def get_result(self):
-        return self.texte_filtre, self.sensibles_detectes
+        return self.texte_filtre
