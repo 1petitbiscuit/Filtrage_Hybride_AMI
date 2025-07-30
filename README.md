@@ -1,7 +1,7 @@
 # <ins>**Filtrage Hybride**<ins>
 
 Prototype de filtrage pour l'outil AMI d'Activis. Basé sur NLP et regex.  
-La pércision actuel du filtre est donné à environ 80% sur les tests réalsiés.
+La précision actuel du filtre est donné à environ 80% sur les tests réalsiés.
 
 ## **PYTHON et JSON**
 Le fichier `main.py` exécute le programme. Le reste des fichiers python se trouve dans le répertoire `py`.
