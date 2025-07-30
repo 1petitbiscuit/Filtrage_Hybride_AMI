@@ -40,8 +40,9 @@ def filtre(text):
 
 
     # ~~~~ Sémantique (embeddings)  ~~~~#
-    sem_filtre.filtre(temp_text)
-    temp_text = sem_filtre.get_result()
+    if len(text) > 20 :
+        sem_filtre.filtre(temp_text)
+        temp_text = sem_filtre.get_result()
 
     return temp_text
 

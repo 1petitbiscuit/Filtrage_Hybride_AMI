@@ -6,7 +6,7 @@ class FiltreNLP(FiltreBase):
 
     def __init__(self):
         super().__init__()
-        self.nlp = spacy.load("fr_core_news_md")     #sm = small, md = medium, lg = large
+        self.nlp = spacy.load("fr_core_news_lg")     #sm = small, md = medium, lg = large
         
     
     def filtre(self, text):
