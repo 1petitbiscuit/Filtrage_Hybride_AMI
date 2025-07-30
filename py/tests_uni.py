@@ -44,6 +44,8 @@ def tester_filtre():
                 elif item == "[ADRESSE_OR_ALERTE]":
                     if "[ADRESSE]" in result:
                         result_counter[item] = result.count("[ADRESSE]")
+                    elif "[CODE_POSTAL]" in result:
+                        result_counter[item] = result.count("[CODE_POSTAL]")
                     elif "ALERTE" in result:
                         result_counter[item] = 1
                     else:
@@ -51,6 +53,18 @@ def tester_filtre():
                 elif item == "[NUMERO_DOSSIER_OR_ALERTE]":
                     if "[NUMERO_DOSSIER]" in result:
                         result_counter[item] = result.count("[NUMERO_DOSSIER]")
+                    elif "[IP]" in result :
+                        result_counter[item] = result.count("[IP]")
+                    elif "[IMMATRICULATION]" in result :
+                        result_counter[item] = result.count("[IMMATRICULATION]")
+                    elif "[IBAN/SWIFT]" in result :
+                        result_counter[item] = result.count("[IBAN/SWIFT]")
+                    elif "[NUM_PASSEPORT]" in result :
+                        result_counter[item] = result.count("[NUM_PASSEPORT]")
+                    elif "[NUM_PERMIS_CONDUIRE]" in result :
+                        result_counter[item] = result.count("[NUM_PERMIS_CONDUIRE]")
+                    elif "[TOKEN]" in result :
+                        result_counter[item] = result.count("[TOKEN]")
                     elif "ALERTE" in result:
                         result_counter[item] = 1
                     else:

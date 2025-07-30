@@ -101,6 +101,16 @@
     {"input": "Je pense avoir attrapé le sida hier soir. Qui contacter pour m'aider ?", "expected": ["[INFOS_SENSIBLES_OR_ALERTE]"], "difficulté": "difficile"},
     {"input": "Je veux appeler les pompiers. Quel est le numéro ?", "expected": [], "difficulté": "moyen"},
     {"input": "J'ai trouvé une adresse IP sur mon dossier : 192.188.10.10 ; et aussi une adresse mac : A2:4F:9C:1B:7E:D3 ; qu'est ce que cela représente ?", "expected": ["[IP]", "[MAC]"], "difficulté": "moyen"},
-    {"input": "Je dois faire une demande de logement social","expected": ["[INFOS_SENSIBLES]"],"difficulté": "facile"}
+    {"input": "Je dois faire une demande de logement social","expected": ["[INFOS_SENSIBLES]"],"difficulté": "facile"},
+    {"input": "Voici mon numéro de téléphone : 514-123-4567. Merci de me rappeler.","expected": ["[TÉLÉPHONE]"],"difficulté": "facile"},
+    {"input": "Mon adresse email est jean.dupont@gmail.com, je veux recevoir les infos là.","expected": ["[EMAIL]"],"difficulté": "facile"},
+    {"input": "Mon NAS est 123-456-789, dois-je le fournir pour la demande ?","expected": ["[NAS]"],"difficulté": "facile"},
+    {"input": "J'ai trouvé une carte avec le numéro 4111 1111 1111 1111 dans la rue.","expected": ["[CARTE_BANQUAIRE]"],"difficulté": "moyen"},
+    {"input": "J'habite au 45 chemin des érables, à Trois-Rivières.","expected": ["[ADRESSE_OR_ALERTE]"],"difficulté": "difficile"},
+    {"input": "Ma plaque d'immatriculation est JKL-9823, il faut la signaler.","expected": ["[NUMERO_DOSSIER_OR_ALERTE]"],"difficulté": "moyen"},
+    {"input": "Le code postal est H2X 3L4, c’est bien ça ?","expected": ["[ADRESSE_OR_ALERTE]"],"difficulté": "facile"},
+    {"input": "Voici mon identifiant de session : a3f5e9c2b7d4a1e6f8c9d0b1a2e3f4d5","expected": ["[TOKEN]"],"difficulté": "difficile"},
+    {"input": "Je suis né le 12/03/1985 et je veux m’inscrire au programme.","expected": ["[DATE]"],"difficulté": "facile"},
+    {"input": "Le montant payé était de 1 250,75 $ pour les rénovations.","expected": ["[ARGENT]"],"difficulté": "facile"}
     ]
 }
